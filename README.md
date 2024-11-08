@@ -26,28 +26,28 @@ The project directory contains the following:
    cd game/
 Start the local replica in the background:
 bash
-复制代码
+
 dfx start --background
 Deploy the project to the local replica:
 bash
-复制代码
+
 dfx deploy
 Once deployment completes, access the application at:
 bash
-复制代码
+
 http://localhost:4943?canisterId={asset_canister_id}
 Development Environment Setup
 Updating Candid Interface
 If backend code changes, regenerate the Candid interface:
 
 bash
-复制代码
+
 npm run generate
 Frontend Development
 To start the frontend development server:
 
 bash
-复制代码
+
 npm start
 The frontend is available at http://localhost:8080 and proxies API requests to the replica on port 4943.
 
